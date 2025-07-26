@@ -215,7 +215,7 @@ This project is licensed under the GNU License. See the [LICENSE](LICENSE) file 
 
 ## 📞 Contact
 
-SimorghCMS Project - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
+SimorghCMS Project - [@your_twitter](https://twitter.com/your_twitter) - shayanheidari01@gmail.com
 
 Project Link: [SimorghCMS](https://github.com/shayanheidari01/SimorghCMS)
 
