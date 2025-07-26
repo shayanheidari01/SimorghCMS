@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات - SimorghCMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="/">SimorghCMS</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/">خانه</a></li>
+                        <li><a href="/posts" class="active">مقالات</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons" id="authButtons">
+                    <a href="/login" class="btn btn-outline">ورود</a>
+                    <a href="/register" class="btn btn-primary">ثبت نام</a>
+                </div>
+                <div class="user-menu" id="userMenu" style="display: none;">
+                    <span id="username"></span>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">حساب کاربری</button>
+                        <div class="dropdown-content">
+                            <a href="/dashboard">داشبورد</a>
+                            <a href="/profile">پروفایل</a>
+                            <a href="#" id="logoutBtn">خروج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Posts Page -->
+    <main class="container posts-page">
+        <div class="page-header">
+            <h2 class="page-title">مقالات</h2>
+            <div id="createPostBtn" style="display: none;">
+                <a href="create-/post" class="btn btn-primary">ایجاد مقاله جدید</a>
+            </div>
+        </div>
+        
+        <div id="postsContainer" class="posts-grid">
+            <!-- Posts will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 SimorghCMS. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Show create post button if user is logged in
+        document.addEventListener('DOMContentLoaded', function() {
+            if (auth.isLoggedIn()) {
+                document.getElementById('createPostBtn').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

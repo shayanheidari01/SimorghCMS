@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پروفایل - SimorghCMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="/">SimorghCMS</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/">خانه</a></li>
+                        <li><a href="/posts">مقالات</a></li>
+                        <li><a href="/dashboard">داشبورد</a></li>
+                    </ul>
+                </nav>
+                <div class="user-menu" id="userMenu">
+                    <span id="username"></span>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">حساب کاربری</button>
+                        <div class="dropdown-content">
+                            <a href="/dashboard">داشبورد</a>
+                            <a href="/profile" class="active">پروفایل</a>
+                            <a href="#" id="logoutBtn">خروج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Profile -->
+    <main>
+        <div id="profileContainer">
+            <!-- Profile content will be loaded here -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 SimorghCMS. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (!auth.isLoggedIn()) {
+                window.location.href = '/login';
+                return;
+            }
+            loadUserProfile();
+        });
+    </script>
+</body>
+</html>

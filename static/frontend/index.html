@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimorghCMS - سیستم مدیریت محتوا</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="/">SimorghCMS</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/" class="active">خانه</a></li>
+                        <li><a href="/posts">مقالات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons" id="authButtons">
+                    <a href="/login" class="btn btn-outline">ورود</a>
+                    <a href="/register" class="btn btn-primary">ثبت نام</a>
+                </div>
+                <div class="user-menu" id="userMenu" style="display: none;">
+                    <span id="username"></span>
+                    <div class="dropdown">
+                        <button class="dropdown-btn">حساب کاربری</button>
+                        <div class="dropdown-content">
+                            <a href="/dashboard">داشبورد</a>
+                            <a href="/profile">پروفایل</a>
+                            <a href="#" id="logoutBtn">خروج</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">به SimorghCMS خوش آمدید</h1>
+                <p class="hero-subtitle">سیستم مدیریت محتوای مدرن، سریع و زیبا</p>
+                <div class="hero-buttons">
+                    <a href="/posts" class="btn btn-primary">مشاهده مقالات</a>
+                    <a href="/register" class="btn btn-outline">شروع کنید</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">ویژگی‌های SimorghCMS</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>⚡</span>
+                    </div>
+                    <h3>سرعت بالا</h3>
+                    <p>طراحی شده با تکنولوژی‌های مدرن برای حداکثر سرعت</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>🔒</span>
+                    </div>
+                    <h3>امنیت</h3>
+                    <p>احراز هویت پیشرفته و کنترل دسترسی</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span>📱</span>
+                    </div>
+                    <h3>واکنش‌گرا</h3>
+                    <p>طراحی واکنش‌گرا برای تمامی دستگاه‌ها</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SimorghCMS</h3>
+                    <p>سیستم مدیریت محتوای مدرن و قدرتمند</p>
+                </div>
+                <div class="footer-section">
+                    <h4>لینک‌های مفید</h4>
+                    <ul>
+                        <li><a href="/">خانه</a></li>
+                        <li><a href="/posts">مقالات</a></li>
+                        <li><a href="about.html">درباره ما</a></li>
+                        <li><a href="contact.html">تماس با ما</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>شبکه‌های اجتماعی</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="فیسبوک">📘</a>
+                        <a href="#" aria-label="توییتر">🐦</a>
+                        <a href="#" aria-label="اینستاگرام">📷</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 SimorghCMS. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

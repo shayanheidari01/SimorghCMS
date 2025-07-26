@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود - SimorghCMS</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><a href="/">SimorghCMS</a></h1>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="/">خانه</a></li>
+                        <li><a href="/posts">مقالات</a></li>
+                    </ul>
+                </nav>
+                <div class="auth-buttons" id="authButtons">
+                    <a href="/login" class="btn btn-outline active">ورود</a>
+                    <a href="/register" class="btn btn-primary">ثبت نام</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <main class="container">
+        <div class="form-container">
+            <h2 class="form-title">ورود به حساب کاربری</h2>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username" class="form-label">نام کاربری</label>
+                    <input type="text" id="username" name="username" class="form-input" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password" class="form-label">رمز عبور</label>
+                    <input type="password" id="password" name="password" class="form-input" required>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" id="loginSubmit" class="btn btn-primary">ورود</button>
+                    <a href="/register" class="btn btn-outline">ثبت نام</a>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023 SimorghCMS. تمامی حقوق محفوظ است.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
