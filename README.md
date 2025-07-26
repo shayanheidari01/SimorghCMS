@@ -2,141 +2,145 @@
 
 <div align="center">
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt="Vue.js">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   <img src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
 </div>
 
 <div align="center">
-  <h3>یک سیستم مدیریت محتوای مدرن و قدرتمند</h3>
-  <p>ساخته شده با FastAPI و Vue.js</p>
+  <h3>A Modern and Powerful Content Management System</h3>
+  <p>Built with FastAPI and Pure HTML/CSS/JS</p>
 </div>
 
-## 📋 معرفی پروژه
+## 📋 Project Overview
 
-SimorghCMS یک سیستم مدیریت محتوای مدرن، سریع و کاربرپسند است که با الهام از WordPress طراحی شده است. این CMS با استفاده از تکنولوژی‌های مدرن مانند FastAPI و Vue.js ساخته شده و ویژگی‌های پیشرفته‌ای مانند مدیریت کاربران، مقالات، دسته‌بندی‌ها و نظرات را ارائه می‌دهد.
+SimorghCMS is a modern, fast, and user-friendly Content Management System inspired by WordPress. This CMS is built using modern technologies like FastAPI and provides advanced features such as user management, articles, categories, and comments management.
 
-## 🚀 ویژگی‌ها
+## 🚀 Features
 
-### بک‌اند (FastAPI)
-- ✅ سیستم احراز هویت JWT
-- ✅ مدیریت کاربران با نقش‌های مختلف (Admin, Editor, Author, Subscriber)
-- ✅ ایجاد، ویرایش و حذف مقالات
-- ✅ دسته‌بندی و تگ‌گذاری مقالات
-- ✅ سیستم نظرات با مدیریت وضعیت
-- ✅ آپلود و مدیریت فایل‌های رسانه‌ای
-- ✅ API مستند با Swagger و ReDoc
-- ✅ پایگاه داده ناهمزمان با SQLAlchemy
-- ✅ امنیت بالا و اعتبارسنجی داده‌ها
+### Backend (FastAPI)
+- ✅ JWT Authentication System
+- ✅ User Management with Different Roles (Admin, Editor, Author, Subscriber)
+- ✅ Create, Edit, and Delete Articles
+- ✅ Article Categorization and Tagging
+- ✅ Comment System with Status Management
+- ✅ Media File Upload and Management
+- ✅ Documented API with Swagger and ReDoc
+- ✅ Asynchronous Database with SQLAlchemy
+- ✅ High Security and Data Validation
 
-### فرانت‌اند (Vue.js/HTML)
-- ✅ طراحی واکنش‌گرا و مدرن
-- ✅ داشبورد کاربری پیشرفته
-- ✅ مدیریت مقالات و نظرات
-- ✅ پروفایل کاربری
-- ✅ طراحی چندزبانه (فارسی)
-- ✅ سرعت بالا و عملکرد عالی
-- ✅ بدون نیاز به فریمورک سنگین
+### Frontend (Pure HTML/CSS/JS)
+- ✅ Responsive and Modern Design
+- ✅ Advanced User Dashboard
+- ✅ Article and Comment Management
+- ✅ User Profile Management
+- ✅ Multi-language Support (Persian/English)
+- ✅ High Performance and Speed
+- ✅ No Heavy Framework Dependencies
+- ✅ Clean and Intuitive User Interface
 
-## 🛠️ تکنولوژی‌ها
+## 🛠️ Technologies
 
-### بک‌اند
-- **FastAPI** - فریمورک وب پایتون با عملکرد بالا
-- **SQLAlchemy** - ORM پایتون برای پایگاه داده
-- **SQLite** - پایگاه داده سبک و قابل حمل
-- **JWT** - توکن‌های امن برای احراز هویت
-- **Alembic** - ابزار میگریشن پایگاه داده
-- **Pydantic** - اعتبارسنجی داده‌ها
+### Backend
+- **FastAPI** - High-performance Python web framework
+- **SQLAlchemy** - Python ORM for database operations
+- **SQLite** - Lightweight and portable database
+- **JWT** - Secure tokens for authentication
+- **Alembic** - Database migration tool
+- **Pydantic** - Data validation and settings management
 
-### فرانت‌اند
-- **HTML/CSS/JavaScript** - برای نسخه سبک
-- **Vue.js** - برای نسخه پیشرفته (اختیاری)
-- **Tailwind CSS** - فریمورک CSS مدرن
-- **Axios** - کلاینت HTTP برای API calls
+### Frontend
+- **HTML5** - Markup language for web pages
+- **CSS3** - Styling and responsive design
+- **JavaScript (ES6+)** - Client-side scripting
+- **Fetch API** - Modern HTTP client for API calls
+- **No Framework Dependencies** - Pure vanilla JavaScript
 
-## 📦 نصب و راه‌اندازی
+## 📦 Installation and Setup
 
-### پیش‌نیازها
+### Prerequisites
 - Python 3.8+
 - pip
-- Node.js (برای نسخه Vue.js)
+- Git
 
-### نصب بک‌اند
+### Backend Installation
 
 ```bash
-# کلون کردن پروژه
+# Clone the repository
 git clone https://github.com/yourusername/SimorghCMS.git
 cd SimorghCMS
 
-# ایجاد محیط مجازی
+# Create virtual environment
 python -m venv venv
-source venv/bin/activate  # در Windows: venv\Scripts\activate
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-# نصب وابستگی‌ها
+# Install dependencies
 pip install -r requirements.txt
 
-# ایجاد پایگاه داده
+# Create database
 alembic revision --autogenerate -m "Initial migration"
 alembic upgrade head
 ```
 
-### اجرای بک‌اند
+### Running the Backend
 
 ```bash
-# اجرای سرور توسعه
+# Run development server
 uvicorn app.main:app --reload
 
-# سرور در http://localhost:8000 اجرا می‌شود
+# Server will be available at http://localhost:8000
 ```
 
-### نصب فرانت‌اند (نسخه سبک)
+### Frontend Setup
 
 ```bash
-# فایل‌های فرانت‌اند را در دایرکتوری static/frontend قرار دهید
+# Create static directory for frontend files
 mkdir -p static/frontend
 
-# کپی کردن فایل‌های فرانت‌اند
+# Copy frontend files to static directory
 cp -r frontend/* static/frontend/
 ```
 
-### اجرای فرانت‌اند (برای توسعه)
+### Running the Frontend (for development)
 
 ```bash
-# در دایرکتوری frontend
+# From the project root directory
 python -m http.server 3000
 
-# فرانت‌اند در http://localhost:3000 اجرا می‌شود
+# Frontend will be available at http://localhost:3000
 ```
 
-## 📚 مستندات API
+## 📚 API Documentation
 
-پس از اجرای سرور، می‌توانید به مستندات API دسترسی پیدا کنید:
+After starting the server, you can access the API documentation:
 
 - **Swagger UI**: `http://localhost:8000/api/docs`
 - **ReDoc**: `http://localhost:8000/api/redoc`
 
-## 🗂️ ساختار پروژه
+## 🗂️ Project Structure
 
 ```
 SimorghCMS/
 ├── app/
 │   ├── api/          # API endpoints
-│   ├── core/         # تنظیمات اصلی و امنیت
-│   ├── crud/         # عملیات پایگاه داده
-│   ├── database/     # تنظیمات پایگاه داده
-│   ├── models/       # مدل‌های پایگاه داده
-│   ├── schemas/      # اسکیماهای Pydantic
-│   └── main.py       # فایل اصلی برنامه
-├── frontend/         # فرانت‌اند (نسخه سبک)
-├── static/           # فایل‌های استاتیک
-├── alembic/          # فایل‌های میگریشن
-├── requirements.txt  # وابستگی‌های پایتون
-└── README.md         # این فایل
+│   ├── core/         # Core configurations and security
+│   ├── crud/         # Database operations
+│   ├── database/     # Database configuration
+│   ├── models/       # Database models
+│   ├── schemas/      # Pydantic schemas
+│   └── main.py       # Main application file
+├── frontend/         # Frontend files (lightweight version)
+├── static/           # Static files
+├── alembic/          # Migration files
+├── requirements.txt  # Python dependencies
+└── README.md         # This file
 ```
 
-## 🔧 متغیرهای محیطی
+## 🔧 Environment Variables
 
-ایجاد فایل `.env` در ریشه پروژه:
+Create a `.env` file in the project root:
 
 ```env
 DATABASE_URL=sqlite+aiosqlite:///./cms.db
@@ -145,16 +149,16 @@ ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRE_MINUTES=30
 ```
 
-## 🐳 استفاده از Docker
+## 🐳 Docker Deployment
 
 ```bash
-# ساخت و اجرای با Docker
+# Build and run with Docker
 docker-compose up --build
 ```
 
-## 🚀 استقرار
+## 🚀 Production Deployment
 
-### برای تولید با Nginx
+### With Nginx
 
 ```nginx
 server {
@@ -173,51 +177,51 @@ server {
 }
 ```
 
-## 📖 راهنمای استفاده
+## 📖 Usage Guide
 
-### اولین کاربر ادمین
+### First Admin User
 
-پس از اولین اجرا، یک کاربر ادمین ایجاد کنید:
+After first run, create an admin user:
 
-1. به `http://localhost:8000` مراجعه کنید
-2. روی "ثبت نام" کلیک کنید
-3. اطلاعات کاربری خود را وارد کنید
-4. در پایگاه داده نقش کاربر را به "admin" تغییر دهید
+1. Visit `http://localhost:8000`
+2. Click on "Register"
+3. Enter your user information
+4. Change the user role to "admin" in the database
 
-### ایجاد مقاله
+### Creating Articles
 
-1. وارد حساب کاربری خود شوید
-2. به داشبورد بروید
-3. روی "ایجاد مقاله جدید" کلیک کنید
-4. اطلاعات مقاله را وارد کنید و منتشر کنید
+1. Log in to your account
+2. Go to the dashboard
+3. Click on "Create New Article"
+4. Enter article information and publish
 
-## 🤝 مشارکت
+## 🤝 Contributing
 
-1. Fork کنید
-2. یک branch جدید ایجاد کنید (`git checkout -b feature/AmazingFeature`)
-3. تغییرات خود را commit کنید (`git commit -m 'Add some AmazingFeature'`)
-4. به branch خود push کنید (`git push origin feature/AmazingFeature`)
-5. یک Pull Request باز کنید
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-## 📄 مجوز
+## 📄 License
 
-این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر به فایل [LICENSE](LICENSE) مراجعه کنید.
+This project is licensed under the GNU License. See the [LICENSE](LICENSE) file for details.
 
-## 🙏 تشکر ویژه
+## 🙏 Acknowledgments
 
-- [FastAPI](https://fastapi.tiangolo.com/) برای فریمورک عالی
-- [Vue.js](https://vuejs.org/) برای فرانت‌اند مدرن
-- جامعه توسعه‌دهندگان پایتون
+- [FastAPI](https://fastapi.tiangolo.com/) for the excellent framework
+- [Python](https://www.python.org/) community
+- Open source community
 
-## 📞 تماس
+## 📞 Contact
 
-پروژه SimorghCMS - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
+SimorghCMS Project - [@your_twitter](https://twitter.com/your_twitter) - your.email@example.com
 
-لینک پروژه: [https://github.com/yourusername/SimorghCMS](https://github.com/yourusername/SimorghCMS)
+Project Link: [SimorghCMS](https://github.com/shayanheidari01/SimorghCMS)
 
 ---
 
 <div align="center">
-  <p>ساخته شده با ❤️ و Python</p>
-  <p>© 2023 SimorghCMS. تمامی حقوق محفوظ است.</p>
+  <p>Made with ❤️ and Python</p>
+  <p>© 2023 SimorghCMS. All rights reserved.</p>
 </div>
